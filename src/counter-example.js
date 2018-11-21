@@ -11,7 +11,23 @@ class Counter extends React.Component {
             count : 0
         }
     }
+    componentDidMount() {
+        
+            const optionJSON = localStorage.getItem('count')
+            const count = parseInt(JSON.parse(optionJSON))
+            if(!isNaN(count)) {
+                this.setState(() => ({ count: count }))
+            }
+            
 
+    }
+    componentDidUpdate (prevProps, prevState) {
+        if(prevState.count !== this.state.count) {
+            console.log('Did update '+ this.state.count)
+            const optionJSON = JSON.stringify(this.state.count)
+            localStorage.setItem('count', optionJSON)
+        }
+     }
     handleAddOne() {
         // prevState is previous value before the new value is applied 
         this.setState((prevState) => {
@@ -47,5 +63,7 @@ class Counter extends React.Component {
         )
     }
 }
+
+
 
 ReactDOM.render(<Counter />, document.querySelector('#temp'))
