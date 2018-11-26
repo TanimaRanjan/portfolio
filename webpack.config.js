@@ -3,7 +3,7 @@ const path = require('path')
 
 
 module.exports = {
-    entry: ['babel-polyfill', './src/index.js'], 
+    entry: ['babel-polyfill', './src/app.js'], 
     output: {
         // The path should be absolute path. 
         path: path.resolve(__dirname, 'public/scripts'), 
@@ -34,7 +34,8 @@ module.exports = {
         // Absolute path that lets devserver know where folder that you are trying to server up lives
         contentBase: path.resolve(__dirname, 'public'),
         // Where the assets are
-        publicPath: '/scripts/'
+        publicPath: '/scripts/',
+        historyApiFallback: true
     },
     devtool:'source-map'
 }
