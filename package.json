@@ -1,5 +1,5 @@
 {
-  "name": "indecision-app",
+  "name": "expense-app",
   "version": "1.0.0",
   "main": "input.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-modal": "^3.6.1",
+    "react-router-dom": "^4.3.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "uuid": "^3.3.2",
