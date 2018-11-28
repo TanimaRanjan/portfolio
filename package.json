@@ -1,11 +1,11 @@
 {
-  "name": "expense-app",
+  "name": "portfolio",
   "version": "1.0.0",
-  "main": "input.js",
+  "main": "app.js",
   "scripts": {
     "dev-server": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "start": "node index.js"
+    "start": "node app.js"
   },
   "author": "Tanima Ranjan",
   "license": "ISC",
@@ -37,5 +37,5 @@
   "devDependencies": {
     "@babel/polyfill": "^7.0.0"
   },
-  "description": "Help me decide Application"
+  "description": "Portfolio - Tanima Ranjan"
 }
