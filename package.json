@@ -21,7 +21,7 @@
     "hbs": "^4.0.1",
     "live-server": "^1.2.0",
     "moment": "^2.22.2",
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
