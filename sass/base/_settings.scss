@@ -14,9 +14,12 @@ $dark-grey:#575B72;
 
 // size
 $m-size:1.9rem;//1.6rem;
+$m2-size:1.6rem;
 $s-size:1rem;
 $l-size:3.8rem; // 3.2
-$xl-size:4.8rem;
+$l1-size:3.4rem; 
+$xl-size:6.1rem;//4.8rem;
+
 
 
 // Font Weigth 
@@ -28,3 +31,13 @@ $normal:1.6;
 $low:1.4;
 
 $desktop-breakpoint : 45rem;
+
+
+@mixin clearfix {
+    clear: both;
+    &::after {
+        content: "";
+        clear: both;
+        // display: table;
+    }
+}

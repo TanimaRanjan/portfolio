@@ -1,0 +1,32 @@
+
+body {
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+    font-weight: $bold;
+    // font-size: $s-size;
+    line-height: $normal;
+
+    background-color: $ash;
+    // font-size: $m-size;
+}
+
+.heading {
+    // color:$white;
+    color: currentColor;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    line-height: 1.5;
+
+    &__main--bold {
+        display: block;
+        font-size: $xl-size;
+        font-weight: $bold;
+    }
+
+    &__sub--faded {
+        display: block;
+        font-size: $l1-size;
+        font-weight: 10;
+        opacity: 0.7;
+    }
+}

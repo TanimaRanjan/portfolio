@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before {
+  /* Remove default margin and padding*/
+  margin: 0px;
+  padding: 0px;
+  /* Box sizing - border box  - Border and padding are not added to total width or heigth of box*/
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #F1F1F1; }
+
+.heading {
+  color: currentColor;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  line-height: 1.5; }
+  .heading__main--bold {
+    display: block;
+    font-size: 6.1rem;
+    font-weight: 400; }
+  .heading__sub--faded {
+    display: block;
+    font-size: 3.4rem;
+    font-weight: 10;
+    opacity: 0.7; }
+
+.splash {
+  height: 100vh;
+  min-height: 600px;
+  background: url("https://picsum.photos/id/1002/4312/2868") no-repeat center fixed;
+  background-size: cover;
+  background-color: #50eae0;
+  margin-bottom: 1px;
+  position: relative;
+  color: #FFF; }
+  .splash__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+
+.user-nav__icon {
+  height: 100px;
+  width: 100px; }
+
+.header {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #262834; }
+  .header__logo {
+    margin: 0 auto;
+    height: 50rem;
+    width: 50rem; }
+  .header__text-box {
+    text-align: center; }
+
+.header2 {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #262834;
+  border: 1px solid black; }
+  .header2__logo {
+    border: 1px solid black;
+    height: 50rem;
+    width: 50rem;
+    margin: 0 auto;
+    background: url("https://picsum.photos/id/1002/4312/2868") no-repeat center fixed;
+    background-size: cover;
+    -webkit-mask-image: url(../images/TR_logo_03.svg);
+    mask-image: url(../images/TR_logo_03.svg); }
+  .header2__text-box {
+    text-align: center; }
