@@ -1,0 +1,82 @@
+
+.header {
+    height: 95vh;
+    min-height: 600px;
+    // width: 100%;
+    // float: left;
+    // color: $white;
+    background: url('https://picsum.photos/id/1002/4312/2868') no-repeat center fixed;
+    background-size: cover;
+    background-position: top;
+    background-color: $teal;
+    // margin-bottom: 1px;
+    position: relative;
+    
+    color: $white;
+    
+    &__text-box {
+       position: absolute;
+       top:40%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       text-align:center;
+    }
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left:4rem;
+    }
+
+    &__logo {
+        height: 3.5rem;
+    }
+    
+}
+
+
+.header-wsvg {
+    min-height: 95vh;
+    padding: 5rem;
+
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+
+    background-image: linear-gradient(to right bottom, rgba($teal,0.6),rgba($light-blue,0.6));
+    
+    // color:$black_ash;
+
+    &__logo {
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        // height: 50rem; 
+        max-height: 50rem; 
+        width: 100%; 
+        max-width: 50rem; 
+        // display: flex;
+        // @media only screen and (max-width:900px) {
+        //     height: 20rem; 
+        //     width: 20rem; 
+        //     // padding: 5rem;
+        // }
+        // border:1px solid black;
+    }
+
+    &__text-box {
+        
+        // position: absolute;
+        // top:40%;
+        // left: 50%;
+        // transform: translate(-50%,-50%);
+        // padding: 0;
+        // margin:0;
+        // border:1px solid black;
+        text-align:center;
+    }
+}
