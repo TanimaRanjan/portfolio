@@ -1,56 +1,21 @@
-
-.header {
-    height: 95vh;
-    min-height: 600px;
-    // width: 100%;
-    // float: left;
-    // color: $white;
-    background: url('https://picsum.photos/id/1002/4312/2868') no-repeat center fixed;
-    background-size: cover;
-    background-position: top;
-    background-color: $teal;
-    // margin-bottom: 1px;
-    position: relative;
-    
-    color: $white;
-    
-    &__text-box {
-       position: absolute;
-       top:40%;
-       left: 50%;
-       transform: translate(-50%,-50%);
-       text-align:center;
-    }
-
-    &__logo-box {
-        position: absolute;
-        top: 4rem;
-        left:4rem;
-    }
-
-    &__logo {
-        height: 3.5rem;
-    }
-    
-}
-
-
 .header-wsvg {
     min-height: 95vh;
     padding: 5rem;
 
+    @include display-flex;
 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    // background-image: linear-gradient(to right bottom, rgba($teal,0.6),rgba($light-blue,0.6));
 
-
-
-    background-image: linear-gradient(to right bottom, rgba($teal,0.6),rgba($light-blue,0.6));
+    // background-image: linear-gradient(to right bottom, transparent,transparent);
     
-    // color:$black_ash;
+    color:$white;
+
+    @media only screen and (max-width: $bp-large) {
+            padding: 3.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        padding: 2.5rem;
+    }
 
     &__logo {
         margin: 0 auto;
@@ -80,3 +45,51 @@
         text-align:center;
     }
 }
+
+
+.image_svg 
+{
+    height: 90vh;
+    background-image : url(../images/blue-bubbles-close-up.jpg);
+    -webkit-mask-image :  url(../images/TR_logo_04.svg);
+    -webkit-mask-size : cover;
+
+    mask-image : url(../images/TR_logo_04.svg);
+    mask-size : cover;
+    background-image: none;
+}
+
+.header {
+    height: 95vh;
+    min-height: 600px;
+    // width: 100%;
+    // float: left;
+    // color: $white;
+    background: url('https://picsum.photos/id/1002/4312/2868') no-repeat center fixed;
+    // background-size: cover;
+    background-position: top;
+    background-color: $teal;
+    // margin-bottom: 1px;
+    position: relative;
+
+     color: $white;
+
+     &__text-box {
+       position: absolute;
+       top:40%;
+       left: 50%;
+       transform: translate(-50%,-50%);
+       text-align:center;
+    }
+
+     &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left:4rem;
+    }
+
+     &__logo {
+        height: 3.5rem;
+    }
+
+ }

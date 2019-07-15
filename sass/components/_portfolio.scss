@@ -1,0 +1,40 @@
+
+.portfolio  {
+    min-height: 95vh;
+    padding: 5rem;
+
+    @include display-flex;
+
+    // background-image: linear-gradient(to right bottom, rgba($teal,0.6),rgba($light-blue,0.6));
+    
+
+
+    color:$white;
+
+    font-size: $l-size;
+    font-weight: 400;
+    
+    @media only screen and (max-width: $bp-large) {
+            padding: 3.5rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        padding: 2.5rem;
+    }
+
+    &__text {
+        margin: 0 auto;
+        margin-bottom: 5rem;
+        // height: 50rem; 
+        max-height: 50rem; 
+        width: 100%; 
+        max-width: 50rem; 
+        // display: flex;
+        // @media only screen and (max-width:900px) {
+        //     height: 20rem; 
+        //     width: 20rem; 
+        //     // padding: 5rem;
+        // }
+        // border:1px solid black;
+    }
+
+}

@@ -17,3 +17,28 @@ app.get('*', (req, res) => {
 app.listen(port, ()=> {
     console.log("Server is up ")
 })
+
+
+
+// const sgMail = require('@sendgrid/mail');
+
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+// const sendWelcomeEmail = (email, name) => {
+//         const msg = {
+//             to: 'artichokepresents@gmail.com',
+//             from: 'tanimaranjan@gmail.com',
+//             subject: 'Im testing sending email',
+//             text: `Testing`
+//             // ,
+//             // html: '<strong>NodeJS App</strong>',
+//     };
+//     console.log('sending');
+//   sgMail.send(msg);
+// }
+
+// try {
+//     sendWelcomeEmail();
+// } catch(error) {
+//     console.log(error);
+// }
